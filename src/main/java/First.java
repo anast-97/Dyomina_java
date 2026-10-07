@@ -4,18 +4,18 @@ public class First {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         try {
-            System.out.print("Введите целое число a: ");
+            System.out.print("Введитье целое число №1: ");
             int a = scanner.nextInt();
 
-            System.out.print("Введите целое число b: ");
+            System.out.print("Введите целое число №2: ");
             int b = scanner.nextInt();
 
             if (a > b) {
-                System.out.println("Результат: a > b");
+                System.out.println("результат a > b.");
             } else if (a < b) {
-                System.out.println("Результат: a < b");
+                System.out.println("Результат a < b.");
             } else {
-                System.out.println("Результат сравнения: a = b");
+                System.out.println("Результат сравнения a = b.");
             }
 
             System.out.println("Сложение (a + b) = " + (a + b));
