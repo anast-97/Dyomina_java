@@ -2,19 +2,37 @@ import java.util.Scanner;
 
 public class First {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+        try {
+            System.out.print("Введите целое число a: ");
+            int a = scanner.nextInt();
 
-        System.out.println("Введите первое число!");
-        int a = sc.nextInt();
-        System.out.println("Введите второе число!");
-        int b = sc.nextInt();
+            System.out.print("Введите целое число b: ");
+            int b = scanner.nextInt();
 
-        if (a<b){
-            System.out.println("a<b");
-        } else if (a>b) {
-            System.out.println("a>b");
-        } else {
-            System.out.println("a=b");
+            if (a > b) {
+                System.out.println("Результат: a > b");
+            } else if (a < b) {
+                System.out.println("Результат: a < b");
+            } else {
+                System.out.println("Результат сравнения: a = b");
+            }
+
+            System.out.println("Сложение (a + b) = " + (a + b));
+            System.out.println("Вычитание (a - b) = " + (a - b));
+            System.out.println("Умножение (a * b) = " + (a * b));
+
+            if (b != 0) {
+                System.out.println("Деление (a / b) = " + ((double) a / b));
+            } else {
+                System.out.println("Деление (a / b) = Ошибка! На ноль делить нельзя.");
+            }
+        } catch (Exception e) {
+            System.out.println("Ошибка ввода! Необходимо было ввести целое число.");
+            scanner.nextLine();
         }
+        scanner.close();
     }
 }
+
+
