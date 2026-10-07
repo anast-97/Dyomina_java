@@ -4,31 +4,32 @@ public class First {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         try {
-            System.out.print("Ââåäèòüå öåëîå ÷èñëî ¹1: ");
+            System.out.print("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ†ÐµÐ»Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ â„–1: ");
             int a = scanner.nextInt();
 
-            System.out.print("Ââåäèòå öåëîå ÷èñëî ¹2: ");
+            System.out.print("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ†ÐµÐ»Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ â„–2: ");
             int b = scanner.nextInt();
 
             if (a > b) {
-                System.out.println("ðåçóëüòàò a > b.");
+                System.out.println("Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ a > b.");
             } else if (a < b) {
-                System.out.println("Ðåçóëüòàò a < b.");
+                System.out.println("Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ a < b.");
+
             } else {
-                System.out.println("Ðåçóëüòàò ñðàâíåíèÿ a = b.");
+                System.out.println("Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ ÑÑ€Ð°Ð²Ð½ÐµÐ½Ð¸Ñ a = b.");
             }
 
-            System.out.println("Ñëîæåíèå (a + b) = " + (a + b));
-            System.out.println("Âû÷èòàíèå (a - b) = " + (a - b));
-            System.out.println("Óìíîæåíèå (a * b) = " + (a * b));
+            System.out.println("Ð¡Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ (a + b) = " + (a + b));
+            System.out.println("Ð’Ñ‹Ñ‡ÐµÑ‚Ð°Ð½Ð¸Ðµ (a - b) = " + (a - b));
+            System.out.println("Ð£Ð¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ðµ (a * b) = " + (a * b));
 
             if (b != 0) {
-                System.out.println("Äåëåíèå (a / b) = " + ((double) a / b));
+                System.out.println("Ð”ÐµÐ»ÐµÐ½Ð¸Ðµ (a / b) = " + ((double) a / b));
             } else {
-                System.out.println("Äåëåíèå (a / b) = Îøèáêà! Íà íîëü äåëèòü íåëüçÿ.");
+                System.out.println("Ð”ÐµÐ»ÐµÐ½Ð¸Ðµ (a / b) = ÐžÑˆÐ¸Ð±ÐºÐ°! ÐÐ° Ð½Ð¾Ð»ÑŒ Ð´ÐµÐ»Ð¸Ñ‚ÑŒ Ð½ÐµÐ»ÑŒÐ·Ñ.");
             }
         } catch (Exception e) {
-            System.out.println("Îøèáêà ââîäà! Íåîáõîäèìî áûëî ââåñòè öåëîå ÷èñëî.");
+            System.out.println("ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°! ÐÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð¾ Ð±Ñ‹Ð»Ð¾ Ð²Ð²ÐµÑÑ‚Ð¸ Ñ†ÐµÐ»Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾.");
             scanner.nextLine();
         }
         scanner.close();

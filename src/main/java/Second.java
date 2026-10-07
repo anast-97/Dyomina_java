@@ -4,15 +4,15 @@ public class Second {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введите первую строку!");
+        System.out.print("Р’РІРµРґРёС‚Рµ РїРµСЂРІСѓСЋ СЃС‚СЂРѕРєСѓ: ");
         String a = scanner.nextLine();
-        System.out.println("Введите вторую строку!");
+        System.out.print("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂСѓСЋ СЃС‚СЂРѕРєСѓ: ");
         String b = scanner.nextLine();
 
         if (a.equals(b)) {
-            System.out.println("Строки идентичны!");
+            System.out.println("РЎС‚СЂРѕРєРё РёРґРµРЅС‚РёС‡РЅС‹!");
         } else {
-            System.out.println("Строки неидентичны!");
+            System.out.println("РЎС‚СЂРѕРєРё РЅРµРёРґРµРЅС‚РёС‡РЅС‹!");
         }
         scanner.close();
     }
